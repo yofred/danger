@@ -1,0 +1,1111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+
+/*       colors        */
+$lightgray:#F4F4F4;
+$yellow:#FFD74D;
+
+
+/*       fonts        */
+
+$title-font: 'Raleway', helvetica, sans-serif;
+$title-font-color: #4A4A4A;
+$title-font-size: 2em;
+$title-font-size-mini: 1.6em;
+
+$regular-font: "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$regular-font-weight: 100;
+$regular-font-color: #6B6B6B;
+$regular-font-size: 1.5em;
+$regular-font-line-height: 1.5em;
+
+$regular-font-size-mini: 1.1em;
+$regular-font-color-mini: #8b8b8b;
+
+// sections
+
+p{
+  color:$regular-font-color-mini;
+}
+
+
+#banner {
+   width:100%;
+   background-color: $yellow;
+   background-size: cover;
+
+   min-height: 100vh;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+
+   h1{
+     font-family: 'Lobster', helvetica, sans-serif;
+     font-size: 950%;
+     color:#4A4A4A;
+   }
+
+   h4{
+     font-family: $regular-font;
+     font-weight: 500;
+     font-size: 230%;
+     color:#4A4A4A;
+   }
+
+   p{
+     font-family: $regular-font;
+     font-size: 1.8em;
+     color:rgba(0, 0, 0, 0.54);
+     padding-top:5vh;
+     line-height: 1.5em;
+   }
+
+   #navbar p{
+     font-family: 'Raleway', helvetica, sans-serif;
+     font-size: 110%;
+     color:#fff;
+     padding-top: 30px;
+   }
+}
+
+
+#banner-title {
+  padding-top:28vh;
+}
+
+#second-banner{
+  height:30vh;
+  width:100%;
+  background-color:$lightgray;
+
+  h1{
+    font-family: $title-font;
+    font-size: 220%;
+    color:#4A4A4A;
+    padding-top:8vh;
+  }
+
+  p{
+    font-family: $regular-font;
+    font-weight: $regular-font-weight;
+    font-size: $regular-font-size;
+    line-height:1.5em;
+    padding-top:2vh;
+    padding-bottom:6vh;
+    color: $regular-font-color;
+    margin:0 1em;
+  }
+
+  @media only screen and (max-width: 550px) {
+
+    p{
+      font-size: $regular-font-size*.85;
+    }
+  }
+}
+
+
+#about {
+  padding-top:5vh;
+
+  h1{
+    font-family: $title-font;
+    font-size: $title-font-size-mini;
+  }
+
+  p{
+    font-family: $regular-font;
+    font-size: $regular-font-size-mini;
+    font-color: red;
+    line-height: $regular-font-line-height;
+    padding: .7em .5em;
+
+  }
+
+  img{
+    width:60%;
+    height:60%;
+    padding:30px 0;
+  }
+}
+
+#work {
+  height:500px;
+  width:100%;
+  background-color:#fff;
+}
+
+#top-footer {
+  height:80vh;
+  width:100%;
+  background-color:$lightgray;
+  padding-bottom:1em;
+
+  h1{
+    font-family:$title-font;
+    font-size:$title-font-size;
+    font-color:$title-font-color;
+    padding-top:10vh;
+  }
+
+  p{
+    font-family:$regular-font;
+    font-size:$regular-font-size;
+    font-color:$regular-font-color;
+    line-height:$regular-font-line-height;
+    padding-top:1.5vh;
+  }
+
+  #form{
+    padding-top:3em;
+
+  }
+
+}
+
+#bottom-footer {
+  height:20vh;
+  width:100%;
+  background-color:$yellow;
+}
+
+.section.group.container{
+  max-width: 100%;
+  margin:0 auto;
+}
+
+.section.group.mini-container{
+  max-width: 400px;
+  margin:0 auto;
+}
+
+/*       containers          */
+
+.container{
+  margin:0 auto;
+  width:93vh;
+}
+
+
+.section.group.medium-container{
+
+  margin:0 auto;
+  width:70vh;
+
+  @media only screen and (max-width: 550px) {
+    width:35vh;
+  }
+}
+
+.medium-container{
+
+  margin:0 auto;
+  width:70vh;
+
+  @media only screen and (max-width: 550px) {
+    width:35vh;
+  }
+}
+
+.mini-container{
+  width:380px;
+  margin: 0 auto;
+}
+
+
+ .center-text{
+   text-align:center;
+ }
+
+ /*       buttons          */
+
+#send-button{
+  width:10em;
+  height:3em;
+  background-color:$yellow;
+  float:right;
+
+  p {
+    font-family:helvetica;
+    font-weight:600;
+    color:black;
+    font-size:1.2em;
+  }
+}
+
+// #footer-logo{
+//   padding:2.3em 0;
+// }
+
+#danger-icon{
+  padding-top:2.5em;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*       shapes          */
+.circle {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: lightgray;
+}
+
+.graybox{
+  width:100%;
+  height:3em;
+  background-color:lightgray;
+}
+.graybox-large{
+  width:100%;
+  height:12em;
+  background-color:lightgray;
+}
+
+/*.about-icon{
+  width:200px;
+  height:200px;
+}*/
+
+ /* html5reset.css - 01/11/2011 */
+
+ html, body, div, span, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ abbr, address, cite, code,
+ del, dfn, em, img, ins, kbd, q, samp,
+ small, strong, sub, sup, var,
+ b, i,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section, summary,
+ time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     font-size: 100%;
+     vertical-align: baseline;
+     background: transparent;
+ }
+
+ body {
+     line-height: 1;
+ }
+
+ article,aside,details,figcaption,figure,
+ footer,header,hgroup,menu,nav,section {
+   display: block;
+ }
+
+ nav ul {
+     list-style: none;
+ }
+
+ blockquote, q {
+     quotes: none;
+ }
+
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+     content: '';
+     content: none;
+ }
+
+ a {
+     margin: 0;
+     padding: 0;
+     font-size: 100%;
+     vertical-align: baseline;
+     background: transparent;
+ }
+
+ /* change colours to suit your needs */
+ ins {
+     background-color: #ff9;
+     color: #000;
+     text-decoration: none;
+ }
+
+ /* change colours to suit your needs */
+ mark {
+     background-color: #ff9;
+     color: #000;
+     font-style: italic;
+     font-weight: bold;
+ }
+
+ del {
+     text-decoration:  line-through;
+ }
+
+ abbr[title], dfn[title] {
+     border-bottom: 1px dotted;
+     cursor: help;
+ }
+
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+
+ /* change border colour to suit your needs */
+ hr {
+     display: block;
+     height: 1px;
+     border: 0;
+     border-top: 1px solid #cccccc;
+     margin: 1em 0;
+     padding: 0;
+ }
+
+ input, select {
+     vertical-align: middle;
+ }
+
+
+ /*  SECTIONS  ============================================================================= */
+
+ .section {
+   clear: both;
+   padding: 0px;
+   margin: 0px;
+ }
+
+ /*  GROUPING  ============================================================================= */
+
+
+ .group:before,
+ .group:after {
+     content:"";
+     display:table;
+ }
+ .group:after {
+     clear:both;
+ }
+ .group {
+     zoom:1; /* For IE 6/7 (trigger hasLayout) */
+ }
+
+ /*  GRID COLUMN SETUP   ==================================================================== */
+
+ .col {
+   display: block;
+   float:left;
+   margin: 1% 0 1% 1.6%;
+ }
+
+ .col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+ /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .col {
+     margin: 1% 0 1% 0%;
+   }
+ }
+
+
+
+ /*  GRID OF TWO   ============================================================================= */
+
+
+ .span_2_of_2 {
+   width: 100%;
+ }
+
+ .span_1_of_2 {
+   width: 49.2%;
+ }
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .span_2_of_2 {
+     width: 100%;
+   }
+   .span_1_of_2 {
+     width: 100%;
+   }
+ }
+
+ /*  GRID OF THREE   ============================================================================= */
+
+
+ .span_3_of_3 {
+   width: 100%;
+ }
+
+ .span_2_of_3 {
+   width: 66.13%;
+ }
+
+ .span_1_of_3 {
+   width: 32.26%;
+ }
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 550px) {
+   .span_3_of_3 {
+     width: 100%;
+   }
+   .span_2_of_3 {
+     width: 100%;
+   }
+   .span_1_of_3 {
+     width: 100%;
+   }
+ }
+
+ /*  GRID OF FOUR   ============================================================================= */
+
+
+ .span_4_of_4 {
+   width: 100%;
+ }
+
+ .span_3_of_4 {
+   width: 74.6%;
+ }
+
+ .span_2_of_4 {
+   width: 49.2%;
+ }
+
+ .span_1_of_4 {
+   width: 23.8%;
+ }
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .span_4_of_4 {
+     width: 100%;
+   }
+   .span_3_of_4 {
+     width: 100%;
+   }
+   .span_2_of_4 {
+     width: 100%;
+   }
+   .span_1_of_4 {
+     width: 100%;
+   }
+ }
+
+ /*  GRID OF FIVE   ============================================================================= */
+
+
+ .span_5_of_5 {
+   width: 100%;
+ }
+
+ .span_4_of_5 {
+     width: 79.68%;
+ }
+
+ .span_3_of_5 {
+     width: 59.36%;
+ }
+
+ .span_2_of_5 {
+     width: 39.04%;
+ }
+
+ .span_1_of_5 {
+     width: 18.72%;
+ }
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .span_5_of_5 {
+     width: 100%;
+   }
+   .span_4_of_5 {
+     width: 100%;
+   }
+   .span_3_of_5 {
+     width: 100%;
+   }
+   .span_2_of_5 {
+     width: 100%;
+   }
+   .span_1_of_5 {
+     width: 100%;
+   }
+ }
+
+ /*  GRID OF FIVE   ============================================================================= */
+
+
+ .span_5_of_5 {
+   width: 100%;
+ }
+
+ .span_4_of_5 {
+     width: 79.68%;
+ }
+
+ .span_3_of_5 {
+     width: 59.36%;
+ }
+
+ .span_2_of_5 {
+     width: 39.04%;
+ }
+
+ .span_1_of_5 {
+     width: 18.72%;
+ }
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .span_5_of_5 {
+     width: 100%;
+   }
+   .span_4_of_5 {
+     width: 100%;
+   }
+   .span_3_of_5 {
+     width: 100%;
+   }
+   .span_2_of_5 {
+     width: 100%;
+   }
+   .span_1_of_5 {
+     width: 100%;
+   }
+ }
+
+ /*  GRID OF SIX   ============================================================================= */
+
+
+ .span_6_of_6 {
+   width: 100%;
+ }
+
+ .span_5_of_6 {
+     width: 83.06%;
+ }
+
+ .span_4_of_6 {
+     width: 66.13%;
+ }
+
+ .span_3_of_6 {
+     width: 49.2%;
+ }
+
+ .span_2_of_6 {
+     width: 32.26%;
+ }
+
+ .span_1_of_6 {
+     width: 15.33%;
+ }
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .span_6_of_6 {
+     width: 100%;
+   }
+   .span_5_of_6 {
+     width: 100%;
+   }
+   .span_4_of_6 {
+     width: 100%;
+   }
+   .span_3_of_6 {
+     width: 100%;
+   }
+   .span_2_of_6 {
+     width: 100%;
+   }
+   .span_1_of_6 {
+     width: 100%;
+   }
+ }
+
+ /*  GRID OF SEVEN   ============================================================================= */
+
+
+ .span_7_of_7 {
+   width: 100%;
+ }
+
+ .span_6_of_7 {
+   width: 85.48%;
+ }
+
+ .span_5_of_7 {
+     width: 70.97%;
+ }
+
+ .span_4_of_7 {
+     width: 56.45%;
+ }
+
+ .span_3_of_7 {
+     width: 41.94%;
+ }
+
+ .span_2_of_7 {
+     width: 27.42%;
+ }
+
+ .span_1_of_7 {
+     width: 12.91%;
+ }
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .span_7_of_7 {
+     width: 100%;
+   }
+   .span_6_of_7 {
+     width: 100%;
+   }
+   .span_5_of_7 {
+     width: 100%;
+   }
+   .span_4_of_7 {
+     width: 100%;
+   }
+   .span_3_of_7 {
+     width: 100%;
+   }
+   .span_2_of_7 {
+     width: 100%;
+   }
+   .span_1_of_7 {
+     width: 100%;
+   }
+ }
+
+ /*  GRID OF EIGHT   ============================================================================= */
+
+
+ .span_8_of_8 {
+   width: 100%;
+ }
+
+ .span_7_of_8 {
+   width: 87.3%;
+ }
+
+ .span_6_of_8 {
+   width: 74.6%;
+ }
+
+ .span_5_of_8 {
+   width: 61.9%;
+ }
+
+ .span_4_of_8 {
+   width: 49.2%;
+ }
+
+ .span_3_of_8 {
+   width: 36.5%;
+ }
+
+ .span_2_of_8 {
+   width: 23.8%;
+ }
+
+ .span_1_of_8 {
+   width: 11.1%;
+ }
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .span_8_of_8 {
+     width: 100%;
+   }
+   .span_7_of_8 {
+     width: 100%;
+   }
+   .span_6_of_8 {
+     width: 100%;
+   }
+   .span_5_of_8 {
+     width: 100%;
+   }
+   .span_4_of_8 {
+     width: 100%;
+   }
+   .span_3_of_8 {
+     width: 100%;
+   }
+   .span_2_of_8 {
+     width: 100%;
+   }
+   .span_1_of_8 {
+     width: 100%;
+   }
+ }
+
+ /*  GRID OF NINE   ============================================================================= */
+
+
+ .span_9_of_9 {
+   width: 100%;
+ }
+
+ .span_8_of_9 {
+   width: 88.71%;
+ }
+
+ .span_7_of_9 {
+   width: 77.42%;
+ }
+
+ .span_6_of_9 {
+   width: 66.13%;
+ }
+
+ .span_5_of_9 {
+   width: 54.84%;
+ }
+
+ .span_4_of_9 {
+   width: 43.55%;
+ }
+
+ .span_3_of_9 {
+   width: 32.26%;
+ }
+
+ .span_2_of_9 {
+   width: 20.97%;
+ }
+
+ .span_1_of_9 {
+   width: 9.68%;
+ }
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .span_9_of_9 {
+     width: 100%;
+   }
+   .span_8_of_9 {
+     width: 100%;
+   }
+   .span_7_of_9 {
+     width: 100%;
+   }
+   .span_6_of_9 {
+     width: 100%;
+   }
+   .span_5_of_9 {
+     width: 100%;
+   }
+   .span_4_of_9 {
+     width: 100%;
+   }
+   .span_3_of_9 {
+     width: 100%;
+   }
+   .span_2_of_9 {
+     width: 100%;
+   }
+   .span_1_of_9 {
+     width: 100%;
+   }
+ }
+
+ /*  GRID OF TEN   ============================================================================= */
+
+
+ .span_10_of_10 {
+   width: 100%;
+ }
+
+ .span_9_of_10 {
+   width: 89.84%;
+ }
+
+ .span_8_of_10 {
+   width: 79.68%;
+ }
+
+ .span_7_of_10 {
+   width: 69.52%;
+ }
+
+ .span_6_of_10 {
+   width: 59.36%;
+ }
+
+ .span_5_of_10 {
+   width: 49.2%;
+ }
+
+ .span_4_of_10 {
+   width: 39.04%;
+ }
+
+ .span_3_of_10 {
+   width: 28.88%;
+ }
+
+ .span_2_of_10 {
+   width: 18.72%;
+ }
+
+ .span_1_of_10 {
+   width: 8.56%;
+ }
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .span_10_of_10 {
+     width: 100%;
+   }
+   .span_9_of_10 {
+     width: 100%;
+   }
+   .span_8_of_10 {
+     width: 100%;
+   }
+   .span_7_of_10 {
+     width: 100%;
+   }
+   .span_6_of_10 {
+     width: 100%;
+   }
+   .span_5_of_10 {
+     width: 100%;
+   }
+   .span_4_of_10 {
+     width: 100%;
+   }
+   .span_3_of_10 {
+     width: 100%;
+   }
+   .span_2_of_10 {
+     width: 100%;
+   }
+   .span_1_of_10 {
+     width: 100%;
+   }
+ }
+
+ /*  GRID OF ELEVEN   ============================================================================= */
+
+ .span_11_of_11 {
+   width: 100%;
+ }
+
+ .span_10_of_11 {
+   width: 90.76%;
+ }
+
+ .span_9_of_11 {
+   width: 81.52%;
+ }
+
+ .span_8_of_11 {
+   width: 72.29%;
+ }
+
+ .span_7_of_11 {
+   width: 63.05%;
+ }
+
+ .span_6_of_11 {
+   width: 53.81%;
+ }
+
+ .span_5_of_11 {
+   width: 44.58%;
+ }
+
+ .span_4_of_11 {
+   width: 35.34%;
+ }
+
+ .span_3_of_11 {
+   width: 26.1%;
+ }
+
+ .span_2_of_11 {
+   width: 16.87%;
+ }
+
+ .span_1_of_11 {
+   width: 7.63%;
+ }
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .span_11_of_11 {
+     width: 100%;
+   }
+   .span_10_of_11 {
+     width: 100%;
+   }
+   .span_9_of_11 {
+     width: 100%;
+   }
+   .span_8_of_11 {
+     width: 100%;
+   }
+   .span_7_of_11 {
+     width: 100%;
+   }
+   .span_6_of_11 {
+     width: 100%;
+   }
+   .span_5_of_11 {
+     width: 100%;
+   }
+   .span_4_of_11 {
+     width: 100%;
+   }
+   .span_3_of_11 {
+     width: 100%;
+   }
+   .span_2_of_11 {
+     width: 100%;
+   }
+   .span_1_of_11 {
+     width: 100%;
+   }
+ }
+
+ /*  GRID OF TWELVE   ============================================================================= */
+
+ .span_12_of_12 {
+   width: 100%;
+ }
+
+ .span_11_of_12 {
+   width: 91.53%;
+ }
+
+ .span_10_of_12 {
+   width: 83.06%;
+ }
+
+ .span_9_of_12 {
+   width: 74.6%;
+ }
+
+ .span_8_of_12 {
+   width: 66.13%;
+ }
+
+ .span_7_of_12 {
+   width: 57.66%;
+ }
+
+ .span_6_of_12 {
+   width: 49.2%;
+ }
+
+ .span_5_of_12 {
+   width: 40.73%;
+ }
+
+ .span_4_of_12 {
+   width: 32.26%;
+ }
+
+ .span_3_of_12 {
+   width: 23.8%;
+ }
+
+ .span_2_of_12 {
+   width: 15.33%;
+ }
+
+ .span_1_of_12 {
+   width: 6.86%;
+ }
+
+
+ /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+ @media only screen and (max-width: 480px) {
+   .span_12_of_12 {
+     width: 100%;
+   }
+   .span_11_of_12 {
+     width: 100%;
+   }
+   .span_10_of_12 {
+     width: 100%;
+   }
+   .span_9_of_12 {
+     width: 100%;
+   }
+   .span_8_of_12 {
+     width: 100%;
+   }
+   .span_7_of_12 {
+     width: 100%;
+   }
+   .span_6_of_12 {
+     width: 100%;
+   }
+   .span_5_of_12 {
+     width: 100%;
+   }
+   .span_4_of_12 {
+     width: 100%;
+   }
+   .span_3_of_12 {
+     width: 100%;
+   }
+   .span_2_of_12 {
+     width: 100%;
+   }
+   .span_1_of_12 {
+     width: 100%;
+   }
+ }
